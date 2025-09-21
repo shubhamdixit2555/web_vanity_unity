@@ -120,7 +120,7 @@ document.querySelectorAll('.learn-more-btn').forEach(btn => {
     // WhatsApp link
     const phoneNumber = '919876543210'; // your WhatsApp number
     const message = encodeURIComponent(`Hi! I'm interested in ${service}. Can you share more details?`);
-    modalWhatsAppLink.href = `https://wa.me/${phoneNumber}?text=${message}`;
+    modalWhatsAppLink.href = `https://wa.me/${7014768500}?text=${message}`;
 
     // Show modal with animation
     modal.classList.remove('hidden');
