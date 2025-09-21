@@ -53,7 +53,7 @@
       
 <body class="bg-gray-100 text-gray-700">
   <!-- Navbar -->
-  <nav id="navbar" class="navbar-fixed shadow-md rounded-b-lg">
+  <nav id="navbar" class="navbar-fixed rounded-b-lg navParent">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center text-xl">
         <a href="#" class=" text-2xl md:text-3xl font-thin tracking-widest font-cinzel">VANITY UNIT</a>
         <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
@@ -79,34 +79,34 @@
 <div id="nav-overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300 z-40"></div>
 
   <!-- Hero -->
-  <header class="text-center py-8 bg-center bg-cover rounded-lg shadow-lg relative mt-24" style="background-image:url('images/hero.jpg')">
+  <header class="text-center py-8 bg-center bg-cover rounded-lg   relative mt-24" style="background-image:url('images/hero.jpg')">
     <div class="absolute inset-0 bg-opacity-40 rounded-lg"></div>
     <div class="relative z-10">
-      <h1 class="font-cinzel text-5xl md:text-7xl font-semibold lg:text-8xl font-thin text-d tracking-widest leading-none" style="letter-spacing: normal ; font-weight: 700;">THE VANITY UNIT</h1>
+      <h1 class="font-cinzel text-5xl md:text-7xl font-semibold lg:text-8xl font-thin text-d tracking-widest leading-none heroItm innerHeroItm" style="letter-spacing: normal ; font-weight: 700;">THE VANITY UNIT</h1>
       <br>
-      <p class="font-comfortaa text-d text-lg md:text-lg lg:text-4xl font-light tracking-wide font-semibold">72 Makeup Artist Team</p>
+      <p class="font-comfortaa text-d text-lg md:text-lg lg:text-4xl font-light tracking-wide font-semibold heroItm">72 Makeup Artist Team</p>
       <br>
       <!-- <div class="my-5 flex justify-center space-x-4">
-        <a href="https://instagram.com/Thevanityunit" target="_blank" class="button-instagram font-semibold py-2 px-6 rounded-full shadow-md">INSTAGRAM</a>
-        <a href="https://wa.me/917014768500?text=Hello%2C%20I%27m%20interested%20in%20your%20services." target="_blank" class="button-whatsapp font-semibold py-2 px-6 rounded-full shadow-md">WHATSAPP</a>
+        <a href="https://instagram.com/Thevanityunit" target="_blank" class="button-instagram font-semibold py-2 px-6 rounded-full   ">INSTAGRAM</a>
+        <a href="https://wa.me/917014768500?text=Hello%2C%20I%27m%20interested%20in%20your%20services." target="_blank" class="button-whatsapp font-semibold py-2 px-6 rounded-full   ">WHATSAPP</a>
     </div> -->
     </div>
   </header>
-  <div class="hero-img-container">
+  <div class="hero-img-container heroItm">
     <img class="hero-image" src="Development/images/hero_img.jpeg" alt="Professional makeup artist">
   </div>
 
   <!-- Services Section -->
   <section id="services" class="pt-5">
-    <h2 class="font-alex-brush text-d font-semibold text-center text-5xl md:text-7xl my-6">Our Philosophy</h2>
-    <h4 class="font-comfortaa font-semibold text-center text-md px-6 justify-center md:text-2xl my-5">We Strive To Make Everyone Feel Beautiful And Confident By <br>
+    <h2 class="font-alex-brush text-d font-semibold text-center text-5xl md:text-7xl my-6 serviceItm">Our Philosophy</h2>
+    <h4 class="font-comfortaa font-semibold text-center text-md px-6 justify-center md:text-2xl my-5 serviceItm">We Strive To Make Everyone Feel Beautiful And Confident By <br>
         Enhancing Their Natural Beauty. Everyones' Experience Is <br>
         Customized To Their Specific Needs</h4>
         
     <!-- BRIDAL MAKEUP -->
-    <div class="flex flex-col md:flex-row items-center md:m-16 mb-12 rounded-lg ">
+    <div class="flex flex-col md:flex-row items-center md:m-16 mb-12 rounded-lg bridalItm">
         <div class="w-full md:w-1/2 p-4 md:p-8">
-            <img src="Development/images/Bridal_Makeup.png" alt="Bridal Makeup" class="w-full rounded-lg shadow-lg object-cover service-img zoom-on-hover">
+            <img src="Development/images/Bridal_Makeup.png" alt="Bridal Makeup" class="w-full rounded-lg \ object-cover service-img zoom-on-hover">
         </div>
         <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12 justify-center">
             <div class="flex space-x-2 mb-4 items-baseline justify-center">
@@ -122,9 +122,9 @@
     </div>
 
     <!-- PARTY MAKEUP -->
-    <div class="flex flex-col md:flex-row-reverse items-center md:m-16 mb-12 rounded-lg">
+    <div class="flex flex-col md:flex-row-reverse items-center md:m-16 mb-12 rounded-lg partyItm">
         <div class="w-full md:w-1/2 p-4 md:p-8">
-            <img src="Development/images/Party_Makeup.jpeg" alt="Party Makeup" class="w-full rounded-lg shadow-lg object-cover service-img zoom-on-hover">
+            <img src="Development/images/Party_Makeup.jpeg" alt="Party Makeup" class="w-full rounded-lg   object-cover service-img zoom-on-hover">
         </div>
         <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
             <div class="flex space-x-2 mb-4 items-baseline justify-center">
@@ -140,9 +140,9 @@
     </div>
 
     <!-- HALDI & MEHANDI -->
-    <div class="flex flex-col md:flex-row items-center md:m-16 mb-12 rounded-lg">
+    <div class="flex flex-col md:flex-row items-center md:m-16 mb-12 rounded-lg haldiItm">
         <div class="w-full md:w-1/2 p-4 md:p-8">
-            <img src="Development/images/Haldi_Mehandi.jpeg" alt="Haldi & Mehandi Makeup" class="w-full rounded-lg shadow-lg object-cover service-img zoom-on-hover">
+            <img src="Development/images/Haldi_Mehandi.jpeg" alt="Haldi & Mehandi Makeup" class="w-full rounded-lg   object-cover service-img zoom-on-hover">
         </div>
         <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
             <div class="flex space-x-2 mb-4 items-baseline justify-center">
@@ -158,9 +158,9 @@
     </div>
 
     <!-- PRE WEDDING -->
-    <div class="flex flex-col md:flex-row-reverse items-center md:m-16 mb-12 rounded-lg">
+    <div class="flex flex-col md:flex-row-reverse items-center md:m-16 mb-12 rounded-lg preItm">
         <div class="w-full md:w-1/2 p-4 md:p-8">
-            <img src="Development/images/Pre_Wedding.jpeg" alt="Pre Wedding Makeup" class="w-full rounded-lg shadow-lg object-cover service-img zoom-on-hover">
+            <img src="Development/images/Pre_Wedding.jpeg" alt="Pre Wedding Makeup" class="w-full rounded-lg   object-cover service-img zoom-on-hover">
         </div>
         <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
             <div class="flex space-x-2 mb-4 items-baseline justify-center">
@@ -176,9 +176,9 @@
     </div>
 
     <!-- MATERNITY -->
-    <div class="flex flex-col md:flex-row items-center md:m-16 mb-12 rounded-lg">
+    <div class="flex flex-col md:flex-row items-center md:m-16 mb-12 rounded-lg maternityItm">
         <div class="w-full md:w-1/2 p-4 md:p-8">
-            <img src="Development/images/Maternity_Makeup.jpeg" alt="Maternity Makeup" class="w-full rounded-lg shadow-lg object-cover service-img zoom-on-hover">
+            <img src="Development/images/Maternity_Makeup.jpeg" alt="Maternity Makeup" class="w-full rounded-lg   object-cover service-img zoom-on-hover">
         </div>
         <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
             <div class="flex space-x-2 mb-4 items-baseline justify-center">
@@ -194,9 +194,9 @@
     </div>
 
     <!-- BRAND SHOOT -->
-    <div class="flex flex-col md:flex-row-reverse items-center md:m-16 mb-12 rounded-lg">
+    <div class="flex flex-col md:flex-row-reverse items-center md:m-16 mb-12 rounded-lg brandItm">
         <div class="w-full md:w-1/2 p-4 md:p-8">
-            <img src="Development/images/Brand_shoot_makeup.png" alt="Brand Shoot Makeup" class="w-full rounded-lg shadow-lg object-cover service-img zoom-on-hover">
+            <img src="Development/images/Brand_shoot_makeup.png" alt="Brand Shoot Makeup" class="w-full rounded-lg   object-cover service-img zoom-on-hover">
         </div>
         <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
             <div class="flex space-x-2 mb-4 items-baseline justify-center">
@@ -212,9 +212,9 @@
     </div>
 
     <!-- MEHANDI ARTIST TEAM -->
-    <div class="flex flex-col md:flex-row items-center md:m-16 mb-12 rounded-lg">
+    <div class="flex flex-col md:flex-row items-center md:m-16 mb-12 rounded-lg mehandiItm">
         <div class="w-full md:w-1/2 p-4 md:p-8">
-            <img src="Development/images/Mehandi_Artist_Team.jpeg" alt="Mehandi Artist Team" class="w-full rounded-lg shadow-lg object-cover service-img zoom-on-hover">
+            <img src="Development/images/Mehandi_Artist_Team.jpeg" alt="Mehandi Artist Team" class="w-full rounded-lg   object-cover service-img zoom-on-hover">
         </div>
         <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
             <div class="flex space-x-2 mb-4 items-baseline justify-center">
@@ -232,45 +232,43 @@
 
 
     <!-- Brands Section -->
-<!-- ===== Scrolling Brand Names ===== -->
-<div class="relative overflow-hidden py-3 bg-d ">
-    <div class="animate-scroll flex gap-16 whitespace-nowrap text-white text-3xl my-2 md:text-5xl  md:my-3 font-comfortaa font-semibold" >
-      <span>Huda Beauty</span>
-      <span>Nars</span>
-      <span>Dior</span>
-      <span>Estee Lauder</span>
-      <span>Forever 52</span>
-      <span>Mac</span>
-      <span>NYX</span>
-      <span>Bobbi Brown</span>
-      <span>Maybelline</span>
-      <span>Charlotte Tilbury</span>
-      <span>Smashbox</span>
-      <span>Tarte</span>
-      <!-- Repeat to create a seamless loop -->
-      <span>Huda Beauty</span>
-      <span>Nars</span>
-      <span>Dior</span>
-      <span>Estee Lauder</span>
-      <span>Forever 52</span>
-      <span>Mac</span>
-      <span>NYX</span>
-      <span>Bobbi Brown</span>
-      <span>Maybelline</span>
-      <span>Charlotte Tilbury</span>
-      <span>Smashbox</span>
-      <span>Tarte</span>
-    </div>
+<!-- ===== Scrolling Brand Names (New Layout) ===== -->
+<div class="move bg-d py-3 overflow-hidden relative">
+    <marquee class="my-marquee flex items-center gap-6 whitespace-nowrap text-white text-3xl md:text-5xl font-comfortaa font-semibold cursor-default" behavior="scroll" direction="">
+        <span>Huda Beauty</span> &nbsp;
+      <span>Nars</span> &nbsp;
+      <span>Dior</span> &nbsp;
+      <span>Estee Lauder</span> &nbsp;
+      <span>Forever 52</span> &nbsp;
+      <span>Mac</span> &nbsp;
+      <span>NYX</span> &nbsp;
+      <span>Bobbi Brown</span> &nbsp;
+      <span>Maybelline</span> &nbsp;
+      <span>Charlotte Tilbury</span> &nbsp;
+      <span>Smashbox</span> &nbsp;
+      <span>Tarte</span> &nbsp;
+      <span>Huda Beauty</span> &nbsp;
+      <span>Nars</span> &nbsp;
+      <span>Dior</span> &nbsp;
+      <span>Estee Lauder</span> &nbsp;
+      <span>Forever 52</span> &nbsp;
+      <span>Mac</span> &nbsp;
+      <span>NYX</span> &nbsp;
+      <span>Bobbi Brown</span> &nbsp;
+      <span>Maybelline</span> &nbsp;
+      <span>Charlotte Tilbury</span> &nbsp;
+      <span>Smashbox</span> &nbsp;
+      <span>Tarte</span> &nbsp;
+    </marquee>
   </div>
 
 
-
 <!-- About Me -->
-<section id="about" class="py-8 md:pt-16 pt-0">
+<section id="about" class="py-8 md:pt-16 pt-6">
     <h2 class="font-alex-brush text-d font-semibold text-center text-5xl md:text-7xl my-6">About Me</h2>
     <div class="rounded-lg p-8 md:p-4 flex flex-col md:flex-row items-center justify-center items-center space-y-8 md:space-y-0 md:space-x-8 md:m-16 mb-12 rounded-lg">
         <div class="w-full md:w-2/5 flex justify-center">
-            <img src="Development/images/Vaishali_Sharma.jpeg" alt="Team Member" class="w-5/6 rounded-lg shadow-md h-auto object-cover zoom-on-hover border-2 border-black">
+            <img src="Development/images/Vaishali_Sharma.jpeg" alt="Team Member" class="w-5/6 rounded-lg    h-auto object-cover zoom-on-hover border-2 border-black">
         </div>
         <div class="w-full md:w-1/2">
             <p class="text-gray-600 text-sm md:text-2xl leading-relaxed font-comfortaa font-semibold text-justify">
@@ -397,7 +395,7 @@
                           </div>
                     </div>
                     <div class="flex justify-center mt-8">
-                        <button type="submit" class="button-hover-effect bg-gray-800 text-white font-semibold py-3 px-12 rounded-full shadow-lg">Send</button>
+                        <button type="submit" class="button-hover-effect bg-gray-800 text-white font-semibold py-3 px-12 rounded-full  ">Send</button>
                     </div>
                 </form>
             </div>
@@ -433,7 +431,7 @@
         </div>
     </div>
 </footer> -->
-<footer class="bg-[#648880] rounded-lg shadow-sm m-4">
+<footer class="bg-[#648880] rounded-lg   m-4">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="flex flex-col items-center gap-6 sm:flex-row sm:justify-between sm:items-center">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -460,7 +458,7 @@
 <div id="service-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
     <!-- Add responsive width here -->
     <div
-      class="bg-white rounded-lg shadow-lg w-[90%] sm:w-[80%] md:w-[60%] lg:w-[40%] transform scale-95 opacity-0 transition-all duration-300"
+      class="bg-white rounded-lg   w-[90%] sm:w-[80%] md:w-[60%] lg:w-[40%] transform scale-95 opacity-0 transition-all duration-300"
       id="service-modal-content">
       <div class="p-6">
         <h3 id="service-modal-title" class="font-comfortaa text-2xl font-light text-gray-800 mb-4"></h3>
@@ -482,7 +480,7 @@
 
   <!-- Back to Top Button -->
 <button id="backToTopBtn" 
-class="hidden fixed bottom-6 right-6 z-50 bg-d text-white p-3 rounded-full shadow-lg focus:outline-none">
+class="hidden fixed bottom-6 right-6 z-50 bg-d text-white p-3 rounded-full   focus:outline-none">
 <!-- Up arrow icon -->
 <svg xmlns="http://www.w3.org/2000/svg" 
      fill="none" viewBox="0 0 24 24" 
@@ -492,8 +490,13 @@ class="hidden fixed bottom-6 right-6 z-50 bg-d text-white p-3 rounded-full shado
 </svg>
 </button>
   
-  
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Scroll Trigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="Development/js/main.js"></script>
+  <script src="Development/js/gsap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 </html>

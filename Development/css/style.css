@@ -16,6 +16,60 @@
     font-style: normal;
   }
   
+
+  /* Hide the scrollbar in WebKit browsers */
+::-webkit-scrollbar {
+  width: 0px; /* Removes scrollbar space */
+  background: transparent; /* Optional */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Custom scrollbar for WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7D908C; /* Scroll thumb color */
+  border-radius: 10px;       /* Rounded corners */
+  border: 3px solid #f1f1f1; /* Space around thumb */
+}
+
+/* Custom scrollbar for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #7D908C #f1f1f1; /* thumb color + track color */
+}
+
+/* WebKit browsers */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7D908C;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #7D908C #f1f1f1;
+}
+
 /* Use this class for the Cinzel Decorative font */
 .font-cinzel {
     font-family: 'Cinzel Decorative', serif;
@@ -193,22 +247,6 @@ body {
   }
 
 
-  
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-.animate-scroll {
-  display: inline-flex;
-  animation: scroll-left 20s linear infinite;
-}
-
-
-
 
   @media (max-width: 768px) {
     .service-img {
@@ -234,6 +272,13 @@ body {
     50% {
         box-shadow: 0 0 15px 5px rgba(5, 150, 105, 0.7); /* A more intense glow in the middle */
     }
+}
+
+/* Desktop view – faster speed */
+@media (min-width: 1024px) {
+  .my-marquee {
+    scrollamount: 8; /* This doesn’t work directly in CSS */
+  }
 }
 
 .animate-border-glow {
