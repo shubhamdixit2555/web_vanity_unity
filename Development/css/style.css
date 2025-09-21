@@ -1,0 +1,241 @@
+.cinzel-decorative-regular {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .cinzel-decorative-bold {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .cinzel-decorative-black {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+/* Use this class for the Cinzel Decorative font */
+.font-cinzel {
+    font-family: 'Cinzel Decorative', serif;
+  }
+  
+  /* Use this class for the Afacad font */
+  .font-afacad {
+    font-family: 'Afacad', sans-serif;
+  }
+  
+  /* Use this class for the Comfortaa font */
+  .font-comfortaa {
+    font-family: 'Comfortaa', sans-serif;
+  }  
+    /* Use this class for the Alex Brush font */
+    .font-alex-brush {
+      font-family: 'Alex Brush', cursive;
+    }
+    
+  
+html {
+    font-size: 16px;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #f0f0f0; */
+    /* background-color: darkgoldenrod !important; */
+    color: #4b5563;
+    overflow-x: hidden;
+}
+  .header-font {
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .zoom-on-hover {
+    transition: transform 0.5s ease-in-out;
+  }
+  .zoom-on-hover:hover {
+    transform: scale(1.05);
+  }
+  .button-hover-effect {
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  .button-hover-effect:hover {
+    background-color: #4b5563;
+    transform: translateY(-2px);
+  }
+  .input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    border: 1px solid #d1d5db;
+    outline: none;
+  }
+  .input:focus {
+    border-color: #4b5563;
+    box-shadow: 0 0 0 2px rgba(75,85,99,0.3);
+  }
+  .nav-link {
+    /* color: #4b5563; */
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  .nav-link:hover {
+    color: #111827;
+  }
+  .navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
+    background-color: #7D908C;
+    /* background-color: #579a8b; */
+    color: white !important;
+  }
+.text-d {
+    color: #7D908C !important;
+  }
+.bg-d {
+    background-color: #7D908C !important;
+  }
+  .bg-d:hover {
+    background-color: #6c7f7c !important;
+  }
+  .navbar-hidden {
+    transform: translateY(-100%);
+  }
+  .mobile-menu-expanded {
+    max-height: 500px;
+  }
+  #mobile-menu {
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  #mobile-menu-btn {
+    z-index: 1000; /* or a value higher than any other element */
+  }
+  .no-scroll {
+    overflow: hidden;
+}
+
+  /* Class for showing the mobile menu with animation */
+/* Class for showing the dark overlay */
+.nav-overlay-visible {
+    opacity: 1;
+}
+
+/* Initial state of the overlay */
+#nav-overlay {
+    opacity: 0;
+}
+  /* Zoom animation for modal */
+#service-modal.show #service-modal-content {
+    opacity: 1;
+    transform: scale(1);
+  }
+  #service-modal-content {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  
+  /* hero buttons (instagram/whatsapp) */
+  .button-instagram {
+    background-image: linear-gradient(45deg, #FFC0CB, #E6A2C5, #D28BB8, #BE73AC, #A5609B);
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .button-instagram:hover {
+    transform: scale(1.05);
+  }
+  
+  .button-whatsapp {
+    background-image: linear-gradient(to right, #c7e9c8, #a8d7a9, #8ac58b, #6bae6c, #4d9c4d);
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .button-whatsapp:hover {
+    transform: scale(1.05);
+  }
+
+
+/* Hero image styles */
+
+/* Styling for the new hero image container */
+.hero-img-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: -2rem; /* Pulls the image up to touch the header above */
+    z-index: 5; /* Ensures the image stays below the header content */
+  }
+  
+  /* Styling for the hero image itself */
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+    /* Service image styles */
+  .service-img {
+    height: 600px; /* Ya koi bhi height jo aap chahte hain */
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-scroll {
+  display: inline-flex;
+  animation: scroll-left 20s linear infinite;
+}
+
+
+
+
+  @media (max-width: 768px) {
+    .service-img {
+      height: 450px; /* Fixed height for larger screens */
+      object-fit: cover; /* Ensures the image covers the container */
+      object-position: center; /* Centers the image within the container */
+    }
+  }
+
+  /* Media Query for Mobile View */
+@media (max-width: 768px) { /* Adjust breakpoint as per your needs, e.g., 640px for small phones */
+    .hero-image {
+      height: 500px; /* Increase height for mobile to show more of the image vertically */
+      object-position: center top; /* Adjust position to focus on the top part of the image */
+    }
+  } 
+
+
+  @keyframes border-glow {
+    0%, 100% {
+        box-shadow: 0 0 8px 3px rgba(16, 185, 129, 0.5); /* A softer glow at start/end */
+    }
+    50% {
+        box-shadow: 0 0 15px 5px rgba(5, 150, 105, 0.7); /* A more intense glow in the middle */
+    }
+}
+
+.animate-border-glow {
+    animation: border-glow 2s ease-in-out infinite;
+}

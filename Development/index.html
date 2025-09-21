@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Vanity Unit – Professional Bridal, Party & Event Makeup Artists">
+  <meta property="og:title" content="The Vanity Unit">
+  <meta property="og:description" content="72 Makeup Artist Team – Bridal, Party & Event Makeup">
+  <meta property="og:image" content="images/og-image.jpg">
+  <title>The Vanity Unit - Makeup Artist Team</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Alex+Brush&family=Cinzel+Decorative:wght@400;700;900&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="bg-gray-100 text-gray-700">
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar-fixed shadow-md rounded-b-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center text-xl">
+        <a href="#" class=" text-2xl md:text-3xl font-thin tracking-widest font-cinzel">VANITY UNIT</a>
+        <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+        <div class="hidden md:flex space-x-8">
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden w-full transition-all duration-300 overflow-hidden">
+        <div class="flex flex-col items-center py-4 space-y-4">
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<div id="nav-overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300 z-40"></div>
+
+  <!-- Hero -->
+  <header class="text-center py-8 bg-center bg-cover rounded-lg shadow-lg relative mt-24" style="background-image:url('images/hero.jpg')">
+    <div class="absolute inset-0 bg-opacity-40 rounded-lg"></div>
+    <div class="relative z-10">
+      <h1 class="font-cinzel text-5xl md:text-7xl font-semibold lg:text-8xl font-thin text-d tracking-widest leading-none" style="letter-spacing: normal ; font-weight: 700;">THE VANITY UNIT</h1>
+      <br>
+      <p class="font-comfortaa text-d text-lg md:text-lg lg:text-4xl font-light tracking-wide font-semibold">72 Makeup Artist Team</p>
+      <br>
+      <!-- <div class="my-5 flex justify-center space-x-4">
+        <a href="https://instagram.com/Thevanityunit" target="_blank" class="button-instagram font-semibold py-2 px-6 rounded-full shadow-md">INSTAGRAM</a>
+        <a href="https://wa.me/917014768500?text=Hello%2C%20I%27m%20interested%20in%20your%20services." target="_blank" class="button-whatsapp font-semibold py-2 px-6 rounded-full shadow-md">WHATSAPP</a>
+    </div> -->
+    </div>
+  </header>
+  <div class="hero-img-container">
+    <img class="hero-image" src="images/hero_img.jpeg" alt="Professional makeup artist">
+  </div>
+
+  <!-- Services Section -->
+  <section id="services" class="pt-5">
+    <h2 class="font-alex-brush text-d font-semibold text-center text-5xl md:text-7xl my-6">Our Philosophy</h2>
+    <h4 class="font-comfortaa font-semibold text-center text-md px-6 justify-center md:text-2xl my-5">We Strive To Make Everyone Feel Beautiful And Confident By <br>
+        Enhancing Their Natural Beauty. Everyones' Experience Is <br>
+        Customized To Their Specific Needs</h4>
+        
+    <!-- BRIDAL MAKEUP -->
+    <div class="flex flex-col md:flex-row items-center md:m-16 mb-12 rounded-lg ">
+        <div class="w-full md:w-1/2 p-4 md:p-8">
+            <img src="images/Bridal_Makeup.png" alt="Bridal Makeup" class="w-full rounded-lg shadow-lg object-cover service-img zoom-on-hover">
+        </div>
+        <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12 justify-center">
+            <div class="flex space-x-2 mb-4 items-baseline justify-center">
+                <h3 class="font-comfortaa text-5xl md:text-7xl font-light font-semibold text-gray-800 mb-4">
+                    BRIDAL <span class="text-3xl md:text-5xl font-light">MAKEUP</span>
+                </h3>
+            </div>
+            <p class="text-lg md:text-3xl font-comfortaa font-semibold text-gray-600 mb-4 text-center">Achieve The Perfect Look For Your Special Day With The Vanity Unit Team! Both In-Studio & Mobile Services.</p>
+            <div class="flex justify-center">
+                <button class="learn-more-btn underline underline-offset-4 text-xl md:text-3xl" data-service="Bridal Makeup">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PARTY MAKEUP -->
+    <div class="flex flex-col md:flex-row-reverse items-center md:m-16 mb-12 rounded-lg">
+        <div class="w-full md:w-1/2 p-4 md:p-8">
+            <img src="images/Party_Makeup.jpeg" alt="Party Makeup" class="w-full rounded-lg shadow-lg object-cover service-img zoom-on-hover">
+        </div>
+        <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
+            <div class="flex space-x-2 mb-4 items-baseline justify-center">
+                <h3 class="font-comfortaa text-5xl md:text-7xl font-light font-semibold text-gray-800 mb-4">
+                    PARTY <span class="text-3xl md:text-5xl font-light">MAKEUP</span>
+                </h3>
+            </div>
+            <p class="text-lg md:text-3xl font-comfortaa font-semibold text-gray-600 mb-4 text-center">Trust us to create the perfect look so you feel confident and ready for your special event.</p>
+            <div class="flex justify-center">
+                <button class="learn-more-btn underline underline-offset-4 text-xl md:text-3xl" data-service="Party Makeup">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HALDI & MEHANDI -->
+    <div class="flex flex-col md:flex-row items-center md:m-16 mb-12 rounded-lg">
+        <div class="w-full md:w-1/2 p-4 md:p-8">
+            <img src="images/Haldi_Mehandi.jpeg" alt="Haldi & Mehandi Makeup" class="w-full rounded-lg shadow-lg object-cover service-img zoom-on-hover">
+        </div>
+        <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
+            <div class="flex space-x-2 mb-4 items-baseline justify-center">
+                <h3 class="font-comfortaa text-5xl md:text-7xl font-light font-semibold text-gray-800 mb-4">
+                    HALDI & MEHANDI <span class="text-3xl md:text-5xl font-light">MAKEUP</span>
+                </h3>
+            </div>
+            <p class="text-lg md:text-3xl font-comfortaa font-semibold text-gray-600 mb-4 text-center">Haldi and Mehandi makeup is about creating a fresh, radiant look that enhances and complements these vibrant ceremonies.</p>
+            <div class="flex justify-center">
+                <button class="learn-more-btn underline underline-offset-4 text-xl md:text-3xl" data-service="Haldi & Mehandi Makeup">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRE WEDDING -->
+    <div class="flex flex-col md:flex-row-reverse items-center md:m-16 mb-12 rounded-lg">
+        <div class="w-full md:w-1/2 p-4 md:p-8">
+            <img src="images/Pre_Wedding.jpeg" alt="Pre Wedding Makeup" class="w-full rounded-lg shadow-lg object-cover service-img zoom-on-hover">
+        </div>
+        <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
+            <div class="flex space-x-2 mb-4 items-baseline justify-center">
+                <h3 class="font-comfortaa text-5xl md:text-7xl font-light font-semibold text-gray-800 mb-4">
+                    PRE WEDDING <span class="text-3xl md:text-5xl font-light">MAKEUP</span>
+                </h3>
+            </div>
+            <p class="text-lg md:text-3xl font-comfortaa font-semibold text-gray-600 mb-4 text-center">Pre-wedding makeup highlights natural beauty, creating a flawless, long-lasting look for all events.</p>
+            <div class="flex justify-center">
+                <button class="learn-more-btn underline underline-offset-4 text-xl md:text-3xl" data-service="Pre Wedding Makeup">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MATERNITY -->
+    <div class="flex flex-col md:flex-row items-center md:m-16 mb-12 rounded-lg">
+        <div class="w-full md:w-1/2 p-4 md:p-8">
+            <img src="images/Maternity_Makeup.jpeg" alt="Maternity Makeup" class="w-full rounded-lg shadow-lg object-cover service-img zoom-on-hover">
+        </div>
+        <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
+            <div class="flex space-x-2 mb-4 items-baseline justify-center">
+                <h3 class="font-comfortaa text-5xl md:text-7xl font-light font-semibold text-gray-800 mb-4">
+                    MATERNITY <span class="text-3xl md:text-5xl font-light">MAKEUP</span>
+                </h3>
+            </div>
+            <p class="text-lg md:text-3xl font-comfortaa font-semibold text-gray-600 mb-4 text-center">Maternity makeup focuses on enhancing your natural glow with a soft, radiant look.</p>
+            <div class="flex justify-center">
+                <button class="learn-more-btn underline underline-offset-4 text-xl md:text-3xl" data-service="Maternity Makeup">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- BRAND SHOOT -->
+    <div class="flex flex-col md:flex-row-reverse items-center md:m-16 mb-12 rounded-lg">
+        <div class="w-full md:w-1/2 p-4 md:p-8">
+            <img src="images/Brand_shoot_makeup.png" alt="Brand Shoot Makeup" class="w-full rounded-lg shadow-lg object-cover service-img zoom-on-hover">
+        </div>
+        <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
+            <div class="flex space-x-2 mb-4 items-baseline justify-center">
+                <h3 class="font-comfortaa text-5xl md:text-7xl font-light font-semibold text-gray-800 mb-4">
+                    BRAND SHOOT <span class="text-3xl md:text-5xl font-light">MAKEUP</span>
+                </h3>
+            </div>
+            <p class="text-lg md:text-3xl font-comfortaa font-semibold text-gray-600 mb-4 text-center">A brand shoot makeup artist creates a polished and consistent look to enhance a brand's visual identity.</p>
+            <div class="flex justify-center">
+                <button class="learn-more-btn underline underline-offset-4 text-xl md:text-3xl" data-service="Brand Shoot Makeup">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MEHANDI ARTIST TEAM -->
+    <div class="flex flex-col md:flex-row items-center md:m-16 mb-12 rounded-lg">
+        <div class="w-full md:w-1/2 p-4 md:p-8">
+            <img src="images/Mehandi_Artist_Team.jpeg" alt="Mehandi Artist Team" class="w-full rounded-lg shadow-lg object-cover service-img zoom-on-hover">
+        </div>
+        <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
+            <div class="flex space-x-2 mb-4 items-baseline justify-center">
+                <h3 class="font-comfortaa text-5xl md:text-7xl font-light font-semibold text-gray-800 mb-4">
+                    MEHANDI ARTIST <span class="text-3xl md:text-5xl font-light">TEAM</span>
+                </h3>
+            </div>
+            <p class="text-lg md:text-3xl font-comfortaa font-semibold text-gray-600 mb-4 text-center">A Mehndi Artist Team Consists Of Skilled Professionals Who Work Together To Create Intricate Henna Designs. They Collaborate To Handle Large Events And Offer A Variety Of Styles For Clients.</p>
+            <div class="flex justify-center">
+                <button class="learn-more-btn underline underline-offset-4 text-xl md:text-3xl" data-service="Mehandi Artist Team">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Brands Section -->
+<!-- ===== Scrolling Brand Names ===== -->
+<div class="relative overflow-hidden py-3 bg-d ">
+    <div class="animate-scroll flex gap-16 whitespace-nowrap text-white text-3xl my-2 md:text-5xl  md:my-3 font-comfortaa font-semibold" >
+      <span>Huda Beauty</span>
+      <span>Nars</span>
+      <span>Dior</span>
+      <span>Estee Lauder</span>
+      <span>Forever 52</span>
+      <span>Mac</span>
+      <span>NYX</span>
+      <span>Bobbi Brown</span>
+      <span>Maybelline</span>
+      <span>Charlotte Tilbury</span>
+      <span>Smashbox</span>
+      <span>Tarte</span>
+      <!-- Repeat to create a seamless loop -->
+      <span>Huda Beauty</span>
+      <span>Nars</span>
+      <span>Dior</span>
+      <span>Estee Lauder</span>
+      <span>Forever 52</span>
+      <span>Mac</span>
+      <span>NYX</span>
+      <span>Bobbi Brown</span>
+      <span>Maybelline</span>
+      <span>Charlotte Tilbury</span>
+      <span>Smashbox</span>
+      <span>Tarte</span>
+    </div>
+  </div>
+
+
+
+<!-- About Me -->
+<section id="about" class="py-8 md:pt-16 pt-0">
+    <h2 class="font-alex-brush text-d font-semibold text-center text-5xl md:text-7xl my-6">About Me</h2>
+    <div class="rounded-lg p-8 md:p-4 flex flex-col md:flex-row items-center justify-center items-center space-y-8 md:space-y-0 md:space-x-8 md:m-16 mb-12 rounded-lg">
+        <div class="w-full md:w-2/5 flex justify-center">
+            <img src="images/Vaishali_Sharma.jpeg" alt="Team Member" class="w-5/6 rounded-lg shadow-md h-auto object-cover zoom-on-hover border-2 border-black">
+        </div>
+        <div class="w-full md:w-1/2">
+            <p class="text-gray-600 text-sm md:text-2xl leading-relaxed font-comfortaa font-semibold text-justify">
+                Hello, I'm Vaishali Sharma, A Professional
+                Makeup Artist With 10+ Years Of Experience
+                Dedicated To Making You Feel Your Most
+                Beautiful. I Believe Makeup Should Enhance
+                Your Natural Features, Not Hide Them. It's My
+                Passion To Create Looks That Reflect Your
+                Unique Personality, Whether It's For A Special
+                Event Or A Photoshoot. I Use Only High-Quality
+                Products To Ensure A Flowless Finish That Lasts.
+                Let's Collaborate To Create A Stunning Look
+                Thot Leaves You Feeling Confident And Radiant.
+            </p>
+            <p class="mt-4 text-sm font-semibold">
+                - Vaishali Sharma, Founder & Lead Makeup Artist
+            </p>
+        </div>
+    </div>
+    
+    <div class="max-w-4xl mx-auto px-4 md:px-0">
+        <div id="gallery" class="relative w-full" data-carousel="slide">
+            <div class="relative aspect-[3/2] overflow-hidden rounded-lg">
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images_post/1.png" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="A photo from a Haldi and Mehendi event.">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images_post/2.png" class="object-top absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="A photo from a Haldi and Mehendi event.">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images_post/3.png" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="A photo from a Haldi and Mehendi event.">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images_post/4.png" class="object-top absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="A photo from a Haldi and Mehendi event.">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images_post/5.png" class="object-top absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="A photo from a Haldi and Mehendi event.">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images_post/6.jpg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="A photo from a Haldi and Mehendi event.">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images_post/7.jpg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="A photo from a Haldi and Mehendi event.">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images_post/8.jpg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="A photo from a Haldi and Mehendi event.">
+                </div>
+
+
+
+            </div>
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+    </div>
+    <br>
+
+    <div class="flex justify-center mt-8">
+        <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-600 to-emerald-700 group-hover:from-teal-600 group-hover:to-emerald-700 focus:ring-4 focus:outline-none focus:ring-emerald-300 animate-border-glow">
+            <a href="https://instagram.com/Thevanityunit" class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-transparent group-hover:text-white font-semibold">
+                Follow Us On<i class="fa-brands fa-instagram ms-2"></i> Thevanityunit
+            </a>
+        </button>
+    </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-8"> 
+    <h2 class="font-alex-brush text-d font-semibold text-center text-5xl md:text-7xl mt-6">Let's Connect</h2>
+    
+    <div class="container mx-auto px-4 md:px-8 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center justify-center mx-auto ">
+            <div class="my-3 ml-3 flex flex-col gap-6 w-full md:w-4/5 mx-auto items-center md:items-start justify-center md:-mt-10">
+                <h4 class="font-comfortaa font-semibold text-lg md:text-3xl text-gray-600">Tell Us About Your Next Event And Your Makeup Needs. I'm Happy To Help.</h4>
+                <div class="flex flex-col gap-4 text-gray-700 mt-4">
+                    <span class="flex items-center gap-2 font-comfortaa"><i class="fa-solid fa-phone text-teal-600"></i> Phone: <a href="tel:7014768500">+91 7014768500</a> <a href="tel:7976527484">+91 7976527484</a> </span>
+                    <span class="flex items-center gap-2 font-comfortaa"><i class="fa-solid fa-envelope text-teal-600"></i> Email: <a href="mailto:thevanityunit69@gmail.com">Thevanityunit69@gmail.com</a> </span>
+                    <span class="flex items-center gap-2 font-comfortaa"><i class="fa-solid fa-location-dot text-teal-600"></i> Address: <a href="https://www.google.com/maps/place/Vaishali+best+freelancing+makeup+artist+.+Udaipur.+Jaipur.mainpuri.agra.best+makeup+near+me+artist/@24.7843912,73.4198577,991050m/data=!3m1!1e3!4m6!3m5!1s0x3967ef7f56a36477:0x81769538264c745e!8m2!3d24.5672211!4d73.7067889!16s%2Fg%2F11wqddkd6g?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D">Vaishali best freelancing makeup artist . Udaipur. </a></span>
+                </div>
+            </div>
+            
+            <div>
+                <form action="https://api.web3forms.com/submit" method="POST" class="rounded-lg p-8 md:p-12 ">
+                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="relative z-0 w-full mb-5 group">
+                            <input type="text" name="firstName" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-teal-600 peer" placeholder=" " required />
+                            <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-teal-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+                        </div>
+                        <div class="relative z-0 w-full mb-5 group">
+                            <input type="text" name="lastName" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-teal-600 peer" placeholder=" " required />
+                            <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-teal-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+                        </div>
+                        <div class="relative z-0 w-full mb-5 group">
+                            <input type="tel" name="mobile" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-teal-600 peer" placeholder=" " required />
+                            <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-teal-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Mobile No.</label>
+                        </div>
+                        <div class="relative z-0 w-full mb-5 group">
+                            <input type="email" name="email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-teal-600 peer" placeholder=" " required />
+                            <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-teal-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email Address</label>
+                        </div>
+                        <div class="relative z-0 w-full mb-5 group md:col-span-2">
+                            <textarea name="message" id="floating_message" rows="4" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-teal-600 peer" placeholder=" " required></textarea>
+                            <label for="floating_message" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-teal-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Message</label>
+                        </div>
+                        <div class="relative z-0 w-full mb-5 group md:col-span-2">
+                            <input type="date" name="date" id="floating_date" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-teal-600 peer" placeholder=" " />
+                            <label for="floating_date" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-teal-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">DD/MM/YYYY</label>
+                          </div>
+                    </div>
+                    <div class="flex justify-center mt-8">
+                        <button type="submit" class="button-hover-effect bg-gray-800 text-white font-semibold py-3 px-12 rounded-full shadow-lg">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Footer -->
+  <!-- <footer class="bg-[#648880] text-gray-100 py-12">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <div class="flex flex-col items-center md:items-start">
+            <h3 class="font-cinzel text-3xl font-semibold mb-2">VANITY UNIT</h3>
+            <p class="text-sm text-gray-200">Making everyone feel beautiful and confident by enhancing their natural beauty.</p>
+        </div>
+
+        <div class="flex flex-col items-center md:items-start">
+            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+                <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="flex flex-col items-center md:items-start">
+            <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+            <div class="flex space-x-4 mb-4">
+                <a href="https://instagram.com/Thevanityunit" class="text-gray-200 hover:text-white transition-colors"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href="#" class="text-gray-200 hover:text-white transition-colors"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                <a href="#" class="text-gray-200 hover:text-white transition-colors"><i class="fa-brands fa-pinterest fa-xl"></i></a>
+            </div>
+            <p class="text-sm mt-auto text-gray-300">&copy; 2025 The Vanity Unit. All rights reserved.</p>
+        </div>
+    </div>
+</footer> -->
+<footer class="bg-[#648880] rounded-lg shadow-sm m-4">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="flex flex-col items-center gap-6 sm:flex-row sm:justify-between sm:items-center">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white font-cinzel">The Vanity Unit</span>
+            </a>
+            <ul class="flex flex-wrap items-center justify-center gap-4 text-sm font-medium text-gray-200">
+                <li>
+                    <a href="#about" class="nav-link">About Us</a>
+                </li>
+                <li>
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-gray-400 sm:mx-auto lg:my-8" />
+        <span class="block text-sm text-gray-300 text-center">© 2025 <a href="#" class="hover:underline">The Vanity Unit™</a>. All Rights Reserved.</span>
+    </div>
+</footer>
+
+  <!-- Popup Modal -->
+<div id="service-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+    <!-- Add responsive width here -->
+    <div
+      class="bg-white rounded-lg shadow-lg w-[90%] sm:w-[80%] md:w-[60%] lg:w-[40%] transform scale-95 opacity-0 transition-all duration-300"
+      id="service-modal-content">
+      <div class="p-6">
+        <h3 id="service-modal-title" class="font-comfortaa text-2xl font-light text-gray-800 mb-4"></h3>
+        <ul id="service-modal-list" class="list-disc list-inside space-y-2 text-gray-600 mb-6"></ul>
+        <div class="flex justify-end space-x-2 flex-wrap">
+            <button id="modal-close"
+              class="button-hover-effect bg-gray-300 text-gray-800 py-2 px-4 md:px-6 rounded-full text-sm md:text-base">
+              Close
+            </button>
+            <a id="modal-whatsapp-link" target="_blank"
+              class="button-hover-effect bg-green-600 text-white py-2 px-4 md:px-6 rounded-full text-sm md:text-base">
+              Book on WhatsApp
+            </a>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+<button id="backToTopBtn" 
+class="hidden fixed bottom-6 right-6 z-50 bg-d text-white p-3 rounded-full shadow-lg focus:outline-none">
+<!-- Up arrow icon -->
+<svg xmlns="http://www.w3.org/2000/svg" 
+     fill="none" viewBox="0 0 24 24" 
+     stroke-width="2" stroke="currentColor" 
+     class="w-6 h-6 mx-auto">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+</svg>
+</button>
+  
+  
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
