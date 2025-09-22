@@ -1,3 +1,8 @@
+
+document.addEventListener('DOMContentLoaded', () => {
+  mobileMenu.classList.add('hidden');
+});
+
 // Navbar hide/show (Keep this as it is)
 const navbar = document.getElementById('navbar');
 let lastScrollY = window.scrollY;
