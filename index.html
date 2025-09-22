@@ -30,10 +30,9 @@
         <link rel="apple-touch-icon" href="Development/images/logo.jpg">
       
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Alex+Brush&family=Cinzel+Decorative:wght@400;700;900&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel+Decorative:wght@400;700;900&family=Comfortaa:wght@300..700&family=Cormorant+Garamond:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
       
         <!-- Tailwind -->
         <script src="https://cdn.tailwindcss.com"></script>
@@ -49,6 +48,9 @@
       
         <!-- Theme Color for Mobile Browsers -->
         <meta name="theme-color" content="#7D908C">
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
       </head>
       
 <body class="bg-gray-100 text-gray-700">
@@ -106,7 +108,7 @@
     <!-- BRIDAL MAKEUP -->
     <div class="flex flex-col md:flex-row items-center md:m-16 mb-12 rounded-lg bridalItm">
         <div class="w-full md:w-1/2 p-4 md:p-8">
-            <img src="Development/images/Bridal_Makeup.png" alt="Bridal Makeup" class="w-full rounded-lg \ object-cover service-img zoom-on-hover">
+            <img src="Development/images/Bridal_Makeup.png" alt="Bridal Makeup" class="w-full rounded-lg \ object-top service-img zoom-on-hover">
         </div>
         <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12 justify-center">
             <div class="flex space-x-2 mb-4 items-baseline justify-center">
@@ -124,7 +126,7 @@
     <!-- PARTY MAKEUP -->
     <div class="flex flex-col md:flex-row-reverse items-center md:m-16 mb-12 rounded-lg partyItm">
         <div class="w-full md:w-1/2 p-4 md:p-8">
-            <img src="Development/images/Party_Makeup.jpeg" alt="Party Makeup" class="w-full rounded-lg   object-cover service-img zoom-on-hover">
+            <img src="Development/images/Party_Makeup.jpeg" alt="Party Makeup" class="w-full rounded-lg   object-center service-img zoom-on-hover">
         </div>
         <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
             <div class="flex space-x-2 mb-4 items-baseline justify-center">
@@ -142,7 +144,7 @@
     <!-- HALDI & MEHANDI -->
     <div class="flex flex-col md:flex-row items-center md:m-16 mb-12 rounded-lg haldiItm">
         <div class="w-full md:w-1/2 p-4 md:p-8">
-            <img src="Development/images/Haldi_Mehandi.jpeg" alt="Haldi & Mehandi Makeup" class="w-full rounded-lg   object-cover service-img zoom-on-hover">
+            <img src="Development/images/Haldi_Mehandi.jpeg" alt="Haldi & Mehandi Makeup" class="w-full rounded-lg   object-center service-img zoom-on-hover">
         </div>
         <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
             <div class="flex space-x-2 mb-4 items-baseline justify-center">
@@ -160,7 +162,7 @@
     <!-- PRE WEDDING -->
     <div class="flex flex-col md:flex-row-reverse items-center md:m-16 mb-12 rounded-lg preItm">
         <div class="w-full md:w-1/2 p-4 md:p-8">
-            <img src="Development/images/Pre_Wedding.jpeg" alt="Pre Wedding Makeup" class="w-full rounded-lg   object-cover service-img zoom-on-hover">
+            <img src="Development/images/Pre_Wedding.jpeg" alt="Pre Wedding Makeup" class="w-full rounded-lg   object-center service-img zoom-on-hover">
         </div>
         <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
             <div class="flex space-x-2 mb-4 items-baseline justify-center">
@@ -178,7 +180,7 @@
     <!-- MATERNITY -->
     <div class="flex flex-col md:flex-row items-center md:m-16 mb-12 rounded-lg maternityItm">
         <div class="w-full md:w-1/2 p-4 md:p-8">
-            <img src="Development/images/Maternity_Makeup.jpeg" alt="Maternity Makeup" class="w-full rounded-lg   object-cover service-img zoom-on-hover">
+            <img src="Development/images/Maternity_Makeup.jpeg" alt="Maternity Makeup" class="w-full rounded-lg   object-top service-img zoom-on-hover">
         </div>
         <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
             <div class="flex space-x-2 mb-4 items-baseline justify-center">
@@ -196,7 +198,7 @@
     <!-- BRAND SHOOT -->
     <div class="flex flex-col md:flex-row-reverse items-center md:m-16 mb-12 rounded-lg brandItm">
         <div class="w-full md:w-1/2 p-4 md:p-8">
-            <img src="Development/images/Brand_shoot_makeup.png" alt="Brand Shoot Makeup" class="w-full rounded-lg   object-cover service-img zoom-on-hover">
+            <img src="Development/images/Brand_shoot_makeup.png" alt="Brand Shoot Makeup" class="w-full rounded-lg   object-top service-img zoom-on-hover">
         </div>
         <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
             <div class="flex space-x-2 mb-4 items-baseline justify-center">
@@ -214,7 +216,7 @@
     <!-- MEHANDI ARTIST TEAM -->
     <div class="flex flex-col md:flex-row items-center md:m-16 mb-12 rounded-lg mehandiItm">
         <div class="w-full md:w-1/2 p-4 md:p-8">
-            <img src="Development/images/Mehandi_Artist_Team.jpeg" alt="Mehandi Artist Team" class="w-full rounded-lg   object-cover service-img zoom-on-hover">
+            <img src="Development/images/Mehandi_Artist_Team.jpeg" alt="Mehandi Artist Team" class="w-full rounded-lg   object-center service-img zoom-on-hover">
         </div>
         <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:gap-12">
             <div class="flex space-x-2 mb-4 items-baseline justify-center">
@@ -290,49 +292,58 @@
         </div>
     </div>
     
-    <div class="max-w-4xl mx-auto px-4 md:px-0">
-        <div id="gallery" class="relative w-full" data-carousel="slide">
-            <div class="relative aspect-[3/2] overflow-hidden rounded-lg">
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="Development/images_post/1.png" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Image & award. ">
-                </div>
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="Development/images_post/2.png" class="object-top absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="Image & award. ">">
-                </div>
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="Development/images_post/3.png" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Image & award. ">
-                </div>
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="Development/images_post/5.png" class="object-top absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Image & award. ">">
-                </div>
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="Development/images_post/6.jpg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Image & award. ">
-                </div>
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="Development/images_post/7.jpg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Image & award. ">
-                </div>
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="Development/images_post/8.jpg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Image & award. ">
-                </div>
-            </div>
-            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                    </svg>
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                    </svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
+    
+<div class="max-w-4xl mx-auto px-4 md:px-0">
+    <!-- Swiper -->
+    <div class="swiper mySwiper relative aspect-[3/2] overflow-hidden rounded-lg">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="Development/images_post/1.png"
+            class="w-full h-full object-cover object-center" alt="Vaishali Sharma receiving an award on stage.">
         </div>
+        <div class="swiper-slide">
+          <img src="Development/images_post/2.png"
+            class="w-full h-full object-cover object-top" alt="Vaishali Sharma with a client and an award.">
+        </div>
+        <div class="swiper-slide">
+          <img src="Development/images_post/3.png"
+            class="w-full h-full object-cover object-center" alt="Vaishali Sharma working on a model.">
+        </div>
+        <div class="swiper-slide">
+          <img src="Development/images_post/5.png"
+            class="w-full h-full object-cover object-top" alt="Vaishali Sharma with a celebrity.">
+        </div>
+        <div class="swiper-slide">
+          <img src="Development/images_post/6.jpg"
+            class="w-full h-full object-cover object-center" alt="Vaishali Sharma with a group at an event.">
+        </div>
+        <div class="swiper-slide">
+          <img src="Development/images_post/7.jpg"
+            class="w-full h-full object-cover object-center" alt="Vaishali Sharma posing with an award.">
+        </div>
+        <div class="swiper-slide">
+          <img src="Development/images_post/8.jpg"
+            class="w-full h-full object-cover object-center" alt="Vaishali Sharma with another award.">
+        </div>
+      </div>
+  
+      <!-- Navigation buttons -->
+      <div class="swiper-button-next" style="color: #7D908C;"></div>
+      <div class="swiper-button-prev" style="color: #7D908C;"></div>
+  
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+  
+      <!-- Progress circle -->
+      <div class="autoplay-progress">
+        <svg viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+        <span></span>
+      </div>
     </div>
+  </div>
+  
     <br>
 
     <div class="flex justify-center mt-8">
@@ -342,6 +353,7 @@
             </a>
         </button>
     </div>
+      
 </section>
 
   <!-- Contact -->
@@ -398,7 +410,7 @@
 </section>
 
   <!-- Footer -->
-<footer class="bg-[#648880] rounded-lg   m-4">
+<footer class="bg-[#7D908C] rounded-lg   m-4">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="flex flex-col items-center gap-6 sm:flex-row sm:justify-between sm:items-center">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -459,6 +471,9 @@ class="hidden fixed bottom-6 right-6 z-50 bg-d text-white p-3 rounded-full   foc
   
 
 <!-- Scripts -->
+
+<!-- Font Awesome -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 <!-- Lenis for Smooth Scrolling -->
 <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
 <script src="Development/js/lenis.js"></script>

@@ -284,13 +284,87 @@ body {
     }
 }
 
-/* Desktop view – faster speed */
-@media (min-width: 1024px) {
-  .my-marquee {
-    scrollamount: 8; /* This doesn’t work directly in CSS */
-  }
-}
+/* Apply the border glow animation */
 
 .animate-border-glow {
     animation: border-glow 2s ease-in-out infinite;
+}
+
+
+/* swiper js styles */
+ /* Size of swiper */
+ .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* Slides */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+/* Progress circle */
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+/* === Custom color for Swiper arrows === */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #7D908C !important; /* changes the actual arrow icon color */
+  font-size: 24px; /* optional: adjust arrow size */
+}
+
+/* === Custom color for pagination bullets === */
+.swiper-pagination-bullet {
+  background: #7D908C !important; /* inactive bullets */
+  opacity: 0.6;
+}
+.swiper-pagination-bullet-active {
+  background: #7D908C !important; /* active bullet */
+  opacity: 1;
+}
+
+/* === Custom color for autoplay progress circle === */
+.autoplay-progress {
+  color: #7D908C; /* the number */
+}
+
+.autoplay-progress svg {
+  stroke: #7D908C; /* circle stroke */
+}
+
+
+
+.align-top {
+  align-self: flex-start; /* this pins one flex item to the top */
 }
