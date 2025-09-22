@@ -31,7 +31,6 @@ const allItems = [
       gsap.from(item, {
         duration: 0.1,
         y: 50,
-        opacity: 0,
         ease: "power2.out",
         delay: 0.2,
         scrollTrigger: {

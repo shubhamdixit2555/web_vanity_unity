@@ -11,37 +11,41 @@ window.addEventListener('scroll', () => {
   lastScrollY = window.scrollY;
 });
 
-// Mobile menu toggle
+// Mobile menu and overlay logic
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
+const menuIconPath = document.querySelector('#mobile-menu-btn svg path');
 
-// Make sure the mobile menu is hidden by default
-document.addEventListener('DOMContentLoaded', () => {
-  mobileMenu.classList.add('hidden');
-});
+const hamburgerPath = "M4 6h16M4 12h16m-7 6h7";
+const closePath = "M6 18L18 6M6 6l12 12";
 
-// Toggle the menu on button click
+// Toggle the menu, icon, and overlay on button click
 mobileMenuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-});
-
-// Close the menu when clicking anywhere outside of the navbar
-document.addEventListener('click', (event) => {
-    // Check if the clicked element is NOT inside the navbar OR the button
-    if (!navbar.contains(event.target) && !mobileMenuBtn.contains(event.target)) {
-        // Only hide the menu if it's currently visible
-        if (!mobileMenu.classList.contains('hidden')) {
-            mobileMenu.classList.add('hidden');
-        }
+    const isMenuOpen = mobileMenu.classList.toggle('hidden');
+    
+    if (isMenuOpen) {
+        menuIconPath.setAttribute('d', hamburgerPath);
+    } else {
+        menuIconPath.setAttribute('d', closePath);
     }
 });
-// Close the menu when any link is clicked
+
+// Close the menu when clicking any link
 document.querySelectorAll('#mobile-menu a').forEach(link => {
-  link.addEventListener('click', () => {
-      if (!mobileMenu.classList.contains('hidden')) {
-          mobileMenu.classList.add('hidden');
-      }
-  });
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIconPath.setAttribute('d', hamburgerPath);
+    });
+});
+
+// Close the menu when clicking anywhere outside
+document.addEventListener('click', (event) => {
+    if (!navbar.contains(event.target)) {
+        if (!mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+            menuIconPath.setAttribute('d', hamburgerPath);
+        }
+    }
 });
 
 // Data for services in popup

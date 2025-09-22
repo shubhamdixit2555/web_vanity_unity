@@ -198,6 +198,25 @@ body {
     opacity: 0;
   }
   
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px; /* Adjust as needed for spacing */
+    left: 0;
+    background-color: white; /* Or the color you want for the underline */
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link {
+    position: relative; /* Make sure this is present to position the pseudo-element correctly */
+}
+
   /* hero buttons (instagram/whatsapp) */
   .button-instagram {
     background-image: linear-gradient(45deg, #FFC0CB, #E6A2C5, #D28BB8, #BE73AC, #A5609B);
