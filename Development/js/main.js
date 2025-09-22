@@ -172,12 +172,14 @@ document.getElementById('floating_date').value = formattedDate;
   window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
       backToTopBtn.classList.remove('hidden');
+      backToTopBtn.classList.add('animate-bounce'); 
     } else {
       backToTopBtn.classList.add('hidden');
+      backToTopBtn.classList.remove('animate-bounce');
     }
   });
-
-  // Scroll to top on click
-  backToTopBtn.addEventListener('click', () => {
+  
+// Scroll to top on click
+backToTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+});

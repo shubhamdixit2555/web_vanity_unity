@@ -68,6 +68,7 @@
 * {
   scrollbar-width: thin;
   scrollbar-color: #7D908C #f1f1f1;
+  user-select: none; /* Prevent text selection */
 }
 
 /* Use this class for the Cinzel Decorative font */
@@ -138,9 +139,6 @@ body {
     font-weight: 600;
     transition: color 0.3s;
   }
-  .nav-link:hover {
-    color: #111827;
-  }
   .navbar-fixed {
     position: fixed;
     top: 0;
@@ -157,9 +155,6 @@ body {
   }
 .bg-d {
     background-color: #7D908C !important;
-  }
-  .bg-d:hover {
-    background-color: #6c7f7c !important;
   }
   .navbar-hidden {
     transform: translateY(-100%);
@@ -217,28 +212,6 @@ body {
     position: relative; /* Make sure this is present to position the pseudo-element correctly */
 }
 
-  /* hero buttons (instagram/whatsapp) */
-  .button-instagram {
-    background-image: linear-gradient(45deg, #FFC0CB, #E6A2C5, #D28BB8, #BE73AC, #A5609B);
-    color: white;
-    transition: all 0.3s ease;
-  }
-  
-  .button-instagram:hover {
-    transform: scale(1.05);
-  }
-  
-  .button-whatsapp {
-    background-image: linear-gradient(to right, #c7e9c8, #a8d7a9, #8ac58b, #6bae6c, #4d9c4d);
-    color: white;
-    transition: all 0.3s ease;
-  }
-  
-  .button-whatsapp:hover {
-    transform: scale(1.05);
-  }
-
-
 /* Hero image styles */
 
 /* Styling for the new hero image container */
@@ -266,6 +239,14 @@ body {
   }
 
 
+/* Bounce animation class */
+  .animate-bounce {
+    animation: bounce-up 2s ease-in-out infinite; /* Adjust duration and timing here */
+}
+#backToTopBtn.animate-bounce {
+  animation: bounce-up 2s ease-in-out infinite;
+}
+
 
   @media (max-width: 768px) {
     .service-img {
@@ -290,6 +271,16 @@ body {
     }
     50% {
         box-shadow: 0 0 15px 5px rgba(5, 150, 105, 0.7); /* A more intense glow in the middle */
+    }
+}
+
+/* Bounce animation */
+@keyframes bounce-up {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px); /* Adjust the jump height here */
     }
 }
 
