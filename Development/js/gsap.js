@@ -44,17 +44,6 @@ const allItems = [
     });
   });
 
-
-  // Simple infinite marquee scroll left to right
-gsap.to(".marquee", {
-    xPercent: -50,        // move half its width (since duplicated)
-    ease: "none",         // no easing for a smooth constant speed
-    duration: 6,         // adjust speed (higher = slower)
-    repeat: -1            // infinite loop
-  });
-  
-
-
   // If screen width >= 1024px (desktop)
   if (window.innerWidth >= 1024) {
     document.querySelector('.my-marquee').setAttribute('scrollamount', '15');
