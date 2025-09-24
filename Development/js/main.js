@@ -186,7 +186,36 @@ backToTopBtn.addEventListener('click', () => {
 
 
 // Swiper initialization with autoplay progress
+// 🔹 Folder path
+const imageFolder = "Development/images_post/";
 
+// 🔹 Array of objects (name + position class)
+const imageData = [
+  { file: "1.png", position: "object-center" },
+  { file: "2.png", position: "object-top" },
+  { file: "3.png", position: "object-center" },
+  { file: "5.png", position: "object-top" },
+  { file: "6.jpg", position: "object-center" },
+  { file: "7.jpg", position: "object-center" },
+  { file: "8.jpg", position: "object-center" },
+  // future images: { file: "new.jpg", position: "object-bottom" }
+];
+
+// 🔹 Inject slides dynamically
+const sliderWrapper = document.getElementById("slider-wrapper");
+
+imageData.forEach((img, index) => {
+  const slide = document.createElement("div");
+  slide.className = "swiper-slide";
+  slide.innerHTML = `
+    <img src="${imageFolder + img.file}" 
+         class="w-full h-full object-cover ${img.position}" 
+         alt="Slide ${index + 1}">
+  `;
+  sliderWrapper.appendChild(slide);
+});
+
+// 🔹 Swiper initialization with autoplay progress
 const progressCircle = document.querySelector(".autoplay-progress svg");
 const progressContent = document.querySelector(".autoplay-progress span");
 
